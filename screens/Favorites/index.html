@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../globall.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <title>YouTube Favorites</title>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="voidHeader"></div>
+            <div class="searchHeader">
+                <h4 class="mfVideoHeader">MF_Vídeos</h4>
+            
+                <h5 class="favoritTitleHeader">FAVORITOS</h5>
+            </div>
+        </div>
+        <!-- <div class="voidHeader"></div> -->
+        <div class="menuAndSection">
+            <div class="mfDrawer">
+                <h4 class="mfVideoHeader">MF_Drawer</h4>
+                <div class="menuDrawer">
+                    <button class="videoItem"><a href="../../index.html" class="linkFavorito">VÍDEOS</a></button>
+                    <button class="FavItem"><a href="./screens/Favorites/index.html" class="linkFavorito">FAVORITOS <b class="FavoItens" id="ValueFavoriteCounter"> </b></a></button>
+                </div>
+            </div>
+            <div class="voidDrawer"></div>
+            <div class="videoSection">
+                <div class="videosSections" id="videosSectionsWrapper"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../../hooks/fatchFavorites.js"></script>
+</body>
+</html>
