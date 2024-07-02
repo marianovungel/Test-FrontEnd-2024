@@ -11,10 +11,11 @@ function toggleFavorite(videoId, title, thumbnail) {
         var changeStarToWrith = document.getElementById(videoId)
         changeStarToWrith.className = 'star white starIcon';
     }
-
     sessionStorage.setItem('favorites', JSON.stringify(favorites));
     CounterFavoretes()
 }
+
+
 
 function displayVideos(videos) {
     const videosContainer = document.getElementById('videosSectionsWrapper');
@@ -46,9 +47,3 @@ const CounterFavoretes = ()=>{
     displayVideos(favoritesNum)
 }
 CounterFavoretes()
-
-module.exports = {
-    toggleFavorite, 
-    displayVideos,
-    CounterFavoretes
-}

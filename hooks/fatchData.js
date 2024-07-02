@@ -23,7 +23,7 @@ async function searchRandomWord() {
     if (!keyWord) {
         return [];
     }
-    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&q=${keyWord}&part=snippet&type=video&maxResults=50`);
+    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&q=${keyWord}&part=snippet&type=video&maxResults=20`);
     const data = await response.json();
     displayVideos(data.items);
 }
@@ -99,12 +99,3 @@ const CounterFavoretes = ()=>{
 }
 CounterFavoretes()
 searchRandomWord()
-
-module.exports = {
-    toggleFavorite, 
-    displayVideos,
-    CounterFavoretes,
-    searchRandomWord,
-    aleCod,
-    EnterSearch
-}

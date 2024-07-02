@@ -29,21 +29,6 @@ body{
     width: 100%;
     height: 100vh;
 }
-/* #videos, #favorites {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-.video {
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-}
-.video iframe {
-    width: 100%;
-    height: 200px;
-} */
 .star {
     cursor: pointer;
     font-size: 24px;
